@@ -49,7 +49,6 @@
 		9BBD8D192BBC561000A5F295 /* SwiftUIIntergrationProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD8D182BBC561000A5F295 /* SwiftUIIntergrationProjectUITestsLaunchTests.swift */; };
 		9BBD8D282BBC5B0300A5F295 /* PreviewSnapshots in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBD8D272BBC5B0300A5F295 /* PreviewSnapshots */; };
 		9BBD8D2A2BBC5B0300A5F295 /* PreviewSnapshotsTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBD8D292BBC5B0300A5F295 /* PreviewSnapshotsTesting */; };
-		9BBD8D2D2BBC5B3000A5F295 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBD8D2C2BBC5B3000A5F295 /* ComposableArchitecture */; };
 		9BD0A8E32BBE185700953018 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD0A8E22BBE185700953018 /* SnapKit */; };
 		9BD0A8EB2BBE1A4400953018 /* OpenWeatherAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A8EA2BBE1A4400953018 /* OpenWeatherAPIKey.swift */; };
 		9BD0A8ED2BBE1C7100953018 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A8EC2BBE1C7100953018 /* MainMenuView.swift */; };
@@ -129,7 +128,6 @@
 				9BD0A8FA2BBFA01400953018 /* ReactiveCocoa in Frameworks */,
 				9BD0A8F72BBF9F5400953018 /* ReactiveSwift in Frameworks */,
 				9BD0A8E32BBE185700953018 /* SnapKit in Frameworks */,
-				9BBD8D2D2BBC5B3000A5F295 /* ComposableArchitecture in Frameworks */,
 				9B0033392BFED0340057F235 /* RxSwift in Frameworks */,
 				9B0033332BFED0340057F235 /* RxCocoa-Dynamic in Frameworks */,
 				9BBD8D282BBC5B0300A5F295 /* PreviewSnapshots in Frameworks */,
@@ -359,7 +357,6 @@
 			name = SwiftUIIntergrationProject;
 			packageProductDependencies = (
 				9BBD8D272BBC5B0300A5F295 /* PreviewSnapshots */,
-				9BBD8D2C2BBC5B3000A5F295 /* ComposableArchitecture */,
 				9BD0A8E22BBE185700953018 /* SnapKit */,
 				9BD0A8F32BBF9E4200953018 /* Overture */,
 				9BD0A8F62BBF9F5400953018 /* ReactiveSwift */,
@@ -454,7 +451,6 @@
 			mainGroup = 9BBD8CE92BBC560F00A5F295;
 			packageReferences = (
 				9BBD8D262BBC5B0300A5F295 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */,
-				9BBD8D2B2BBC5B3000A5F295 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				9BD0A8E12BBE185700953018 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				9BD0A8F22BBF9E4200953018 /* XCRemoteSwiftPackageReference "swift-overture" */,
 				9BD0A8F52BBF9F5400953018 /* XCRemoteSwiftPackageReference "ReactiveSwift" */,
@@ -905,14 +901,6 @@
 				kind = branch;
 			};
 		};
-		9BBD8D2B2BBC5B3000A5F295 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.2;
-			};
-		};
 		9BD0A8E12BBE185700953018 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -1017,11 +1005,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BBD8D262BBC5B0300A5F295 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */;
 			productName = PreviewSnapshotsTesting;
-		};
-		9BBD8D2C2BBC5B3000A5F295 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BBD8D2B2BBC5B3000A5F295 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
 		};
 		9BD0A8E22BBE185700953018 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
