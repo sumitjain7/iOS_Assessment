@@ -22,10 +22,19 @@ Here are the requirements
     * Rain if there's any
 * Notify the user if the address isn't found or the weather wasn't available for that location (error handling)
 * Each forecast item should show:
+    * Date
     * Weather description
     * Temperature
     * Wind direction and speed
     * Rain if there's any
+
+The end product could look something like this:
+
+![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.04 PM.png)
+
+OR this:
+
+![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.09 PM.png)
 
 ## Mobile App
 
