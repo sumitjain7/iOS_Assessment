@@ -2,11 +2,16 @@
 This project is part of iOS assessment with the Trailhead Team of Salesforce
 
 ## Get Started
-To get started, first go to [Open Weather](https://home.openweathermap.org/api_keys) and generate an API key. Replace the `openWeatherAPIKey` variable in the file `OpenWeatherAPIKey.swift` with your API Key.
+Start by creating a fork of the project.
 
-Then when you build for the first time, you will have to `Trust and Enable` a few frameworks that are related to ComposableArchitecture.
+Once you have completed the assessment, reply to the Hacker Rank forum with the link to the Github Project
 
-## TODO's
+#### Please be sure to commit often so we can follow along with your work
+
+### Open Weather API KEY
+To get started with the open weather API, first go to [Open Weather](https://home.openweathermap.org/api_keys) and generate an API key. Replace the `openWeatherAPIKey` variable in the file `OpenWeatherAPIKey.swift` with your API Key.
+
+## Instructions
 First off, the places where work will need to be done will be marked with `TODO`.
 
 Create an iOS application that allows a user either preselect a list of given addresses or user to enter their own address. Convert the address into a `CLLocation` Object via one of the functions in the `AddressService`. You can create another function if you like if there is a different framework you would like to use to handle events.
@@ -30,14 +35,6 @@ Here are the requirements:
     * Wind direction and speed
     * Rain if there's any
 
-The end product could look something like this:
-
-![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.04 PM.png)
-
-OR this:
-
-![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.09 PM.png)
-
 ## Mobile App
 
 The App Should include the following
@@ -46,3 +43,11 @@ The App Should include the following
     * There are placeholders within the app to write the views and its associated layers in SwiftUI (`SwiftUIView.swift`) or UIKit (`UIKitController.swift`)
 * Handle error conditions from API
 * Unit tests should be included. We’d love to see how you think about testing features and separating code to do so.
+
+The end product could look something like this:
+
+![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.04 PM.png)
+
+OR this:
+
+![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.09 PM.png)
