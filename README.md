@@ -9,9 +9,11 @@ Then when you build for the first time, you will have to `Trust and Enable` a fe
 ## TODO's
 First off, the places where work will need to be done will be marked with `TODO`.
 
-Create an iOS application that allows a user either preselect a list of given addresses or user to enter their own address. Then retrieve and display the current weather and 5-day forecast from OpenWeather.
+Create an iOS application that allows a user either preselect a list of given addresses or user to enter their own address. Convert the address into a `CLLocation` Object via one of the functions in the `AddressService`. You can create another function if you like if there is a different framework you would like to use to handle events.
 
-Here are the requirements
+Then take the result and retrieve and display the current weather and 5-day forecast from OpenWeather.
+
+Here are the requirements:
 
 * Provide a search entry text box or a list of pre-defined locations
 * Each current weather result should show:
