@@ -44,6 +44,14 @@ The App Should include the following
 * Handle error conditions from API
 * Unit tests should be included. We’d love to see how you think about testing features and separating code to do so.
 
+# Summary
+To summarize:
+* Create a service that calls the open weather API (API endpoint and the models are already provided).
+* A basic SwiftUI or UIKit view to display the data (not both).
+* An implementation of separation of concerns (ex. a ViewModel) so that data loading isn’t happening in a view controller.
+* Unit tests for the different scenarios (ex. data loaded, error).
+
+## End Result
 The end product could look something like this:
 
 ![image desc](./Screenshots/Screenshot%202024-05-22%20at%208.35.04 PM.png)
