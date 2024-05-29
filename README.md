@@ -14,7 +14,7 @@ To get started with the open weather API, first go to [Open Weather](https://hom
 ## Instructions
 First off, the places where work will need to be done will be marked with `TODO`.
 
-Create an iOS application that allows a user either preselect a list of given addresses or user to enter their own address. Convert the address into a `CLLocation` Object via one of the functions in the `AddressService`. You can create another function if you like if there is a different framework you would like to use to handle events.
+Build onto this app that allows a user either preselect a list of given addresses or user to enter their own address. Convert the address into a `CLLocation` Object via one of the functions in the `AddressService`. You can create another function if you like if there is a different framework you would like to use to handle events.
 
 Then take the result and retrieve and display the current weather and 5-day forecast from OpenWeather.
 
