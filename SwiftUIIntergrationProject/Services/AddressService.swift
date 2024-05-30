@@ -13,6 +13,9 @@ import RxSwift
 
 /*
  Examples of services that will return a CLLocation object using frameworks like RXSwift, ReactiveSwift, Combine, or just a completion
+For example, if you wanted to use the publisher version to get the address from a string, use:
+    let publisher = Environment.current.addressService.coordinatePublisher("address")
+ 
  TODO: use one of these services to convert an address string to CLLocation
  */
 struct AddressService {
