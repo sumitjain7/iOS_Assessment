@@ -12,7 +12,7 @@ import MapKit
   ///
   /// - parameters:
   ///   - location: CLLocation
-  /// - Returns: URL to retrieve current weather from OpenWeather
+  /// - Returns: URL to retrieve CurrentWeatherJSONData from OpenWeather
 func currentWeatherURL(location: CLLocation) -> URL? {
   weatherServiceUrl(path: "weather", latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
 }
@@ -21,7 +21,7 @@ func currentWeatherURL(location: CLLocation) -> URL? {
   ///
   /// - parameters:
   ///   - location: CLLocation
-  /// - Returns: URL to retrieve forecast from OpenWeather
+  /// - Returns: URL to retrieve ForecastJSONData from OpenWeather
 func forecastURL(latitude: CLLocationDegrees, longitude: CLLocationDegrees) -> URL? {
   weatherServiceUrl(path: "forecast", latitude: latitude, longitude: longitude)
 }

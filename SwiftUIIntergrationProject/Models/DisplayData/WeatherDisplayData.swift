@@ -8,10 +8,10 @@
 import Foundation
 
 struct WeatherDisplayData: Equatable {
-  let currentWeather: CurrentWeatherJSONData
-  let forecast: ForecastJSONData
+  let currentWeather: CurrentWeatherDisplayData
+  let forecast: ForecastDisplayData
   
-  init(currentWeather: CurrentWeatherJSONData, forecast: ForecastJSONData) {
+  init(currentWeather: CurrentWeatherDisplayData, forecast: ForecastDisplayData) {
     self.currentWeather = currentWeather
     self.forecast = forecast
   }
