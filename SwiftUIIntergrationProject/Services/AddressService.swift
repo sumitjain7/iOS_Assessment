@@ -9,20 +9,21 @@ import Foundation
 import MapKit
 import ReactiveSwift
 import Combine
-import RxSwift
 
 /*
  Examples of services that will return a CLLocation object using frameworks like RXSwift, ReactiveSwift, Combine, or just a completion
-For example, if you wanted to use the publisher version to get the address from a string, use:
+ For example, if you wanted to use the publisher version to get the address from a string, use:
     let publisher = Environment.current.addressService.coordinatePublisher("address")
+ 
+ Feel free to add in additional service types to whatever you feel comfortable. For example, a RxSwift implementation like:
+    static func coordinateObservable(from address: String) -> Observable<CLLocation?>
  
  TODO: use one of these services or create your own to convert an address string to CLLocation
  */
 struct AddressService {
-  var coordinates: (String) -> SignalProducer<CLLocation?, SimpleError> = coordinates
+  var coordinatesProducer: (String) -> SignalProducer<CLLocation?, SimpleError> = coordinates
   var asyncCoordinate: (String) async throws -> CLLocation? = asyncCoordinate
   var coordinatePublisher: (String) -> AnyPublisher<CLLocation?, SimpleError> = coordinatePub
-  var coordinateRX: (String) -> Observable<CLLocation?> = coordinateObservable
   var coordinatesCompletion: (String, ((CLLocation?, SimpleError?) -> Void)?) -> () = coordinatesComp
 }
 
@@ -44,21 +45,6 @@ extension AddressService {
         return
       }
       completion?(location, nil)
-    }
-  }
-  
-  static func coordinateObservable(from address: String) -> Observable<CLLocation?> {
-    return Observable.create { observer in
-      let geoCoder = CLGeocoder()
-      geoCoder.geocodeAddressString(address) { (placemarks, error) in
-        guard let placemarks = placemarks,
-              let location = placemarks.first?.location else {
-          observer.onError(SimpleError.address)
-          return
-        }
-        observer.onNext(location)
-      }
-      return Disposables.create()
     }
   }
   
