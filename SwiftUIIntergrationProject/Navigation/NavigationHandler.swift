@@ -12,15 +12,10 @@ extension UIViewController {
   func handle(action: DemoType) {
     switch action {
     case .uiKit:
-      navigateUIKitView()
+      break
     case .swiftUI:
       navigateSwiftUIView()
     }
-  }
-  
-  private func navigateUIKitView() {
-    let controller = UIKitController()
-    navigationController?.pushViewController(controller, animated: true)
   }
   
   private func navigateSwiftUIView() {

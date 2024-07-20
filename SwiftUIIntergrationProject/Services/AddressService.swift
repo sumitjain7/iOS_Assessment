@@ -22,7 +22,7 @@ import Combine
  */
 struct AddressService {
   var coordinatesProducer: (String) -> SignalProducer<CLLocation?, SimpleError> = coordinates
-  var asyncCoordinate: (String) async throws -> CLLocation? = asyncCoordinate
+  var asyncCoordinates: (String) async throws -> CLLocation? = asyncCoordinate
   var coordinatePublisher: (String) -> AnyPublisher<CLLocation?, SimpleError> = coordinatePub
   var coordinatesCompletion: (String, ((CLLocation?, SimpleError?) -> Void)?) -> () = coordinatesComp
 }
@@ -48,7 +48,7 @@ extension AddressService {
     }
   }
   
-  static func asyncCoordinate(from address: String) async throws -> CLLocation? {
+  static func asyncCoordinate(from address: String) async throws -> CLLocation {
     let geocoder = CLGeocoder()
     
     guard let location = try? await geocoder.geocodeAddressString(address)

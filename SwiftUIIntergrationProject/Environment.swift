@@ -12,7 +12,8 @@ public struct Environment {
   var scheduler: ReactiveSwift.Scheduler = QueueScheduler(qos: .userInitiated, name: "userInitiated")
   var backgroundScheduler: DateScheduler = QueueScheduler(qos: .background, name: "background")
   var runLoop: RunLoop = .main
-  var weatherServiceReactive: WeatherService = .live
+/// Removing the shared instance of network service instance.
+//  var weatherServiceReactive: WeatherService = .live
   var addressService: AddressService = .live
 }
 

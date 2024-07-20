@@ -10,6 +10,10 @@ import SwiftUI
 import SnapKit
 
 class ViewController: UIViewController {
+    lazy var uikitCoordinator: WeatherCoordinator = {
+        let coord = WeatherCoordinator(parentVc: navigationController!)
+        return coord
+    }()
   private lazy var menuView: UIHostingController<MainMenuView> = .init(rootView: .init(delegate: self))
   
   override func viewDidLoad() {
@@ -26,6 +30,10 @@ class ViewController: UIViewController {
 
 extension ViewController: MainMenuViewDelegate {
   func navigate(to destination: DemoType) {
-    handle(action: destination)
+      if destination == .uiKit {
+          uikitCoordinator.start()
+      } else {
+          handle(action: destination)
+      }
   }
 }

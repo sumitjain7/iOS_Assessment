@@ -1,0 +1,18 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "city": {
+        "id": 4790534,
+        "name": "Tysons Corner",
+        "coord": {
+            "lat": 38.9152,
+            "lon": -77.2205
+        },
+        "country": "US",
+        "population": 19627,
+        "timezone": -14400,
+        "sunrise": 1712659217,
+        "sunset": 1712705993
+    }
+}

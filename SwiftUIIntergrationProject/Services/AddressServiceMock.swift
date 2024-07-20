@@ -15,7 +15,7 @@ import Combine
 extension AddressService {
   static var mock = AddressService(
     coordinatesProducer: coordinatesMock,
-    asyncCoordinate: asyncCoordinateMock,
+    asyncCoordinates: asyncCoordinateMock,
     coordinatePublisher: coordinatePubMock,
     coordinatesCompletion: coordinatesCompMock
   )

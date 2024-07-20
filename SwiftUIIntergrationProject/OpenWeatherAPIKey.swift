@@ -7,5 +7,4 @@
 
 import Foundation
 
-//TODO: Enter your Open weather API Key from: https://home.openweathermap.org/api_keys
-let openWeatherAPIKey: String = ""
+let openWeatherAPIKey: String = "d0455434616100596c40b6379def61d1"
